@@ -2,19 +2,31 @@
 <html lang="">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style media="screen">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style media="screen">
+      
         body{
             margin: 0;
             border: 10px solid #192b36;
         }
-        img {
-            max-width: 100%;
-            vertical-align: top;
+        img{
+          max-width: 100%;
+          vertical-align: top;
         }
-
+        img#responsive{
+          display: none;
+        }
+        @media screen and (max-width: 768px){
+          img#responsive{
+            display: block;
+          }
+          img{
+            display: none;
+          }
+        }
+    
     </style>
 </head>
 
@@ -24,6 +36,7 @@
     <img src="img/acustica_395abf3a-d46e-4f19-a9cc-ddee140e6597.webp" alt="">
     <img src="img/clasica_0663a6aa-2c83-4435-8530-357480d5a950.jpg" alt="">
     <img src="img/footer_0bca93db-411f-4541-825a-4c3b5de36bf1.webp" alt="">
+    <img src="img/invie-responsive.png" alt="" id="responsive">
 </body>
 
 </html>
